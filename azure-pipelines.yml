@@ -7,10 +7,6 @@ steps:
     versionSpec: '16.x'  # Specify your desired Node.js version
   displayName: 'Install Node.js'
 
-- task: Npm@1
-  inputs:
-    command: 'install'
-  displayName: 'Install dependencies'
 
 - script: |
     node app.js
