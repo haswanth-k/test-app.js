@@ -1,0 +1,17 @@
+pool:
+  vmImage: 'ubuntu-latest'  # Or another image with Node.js installed
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '16.x'  # Specify your desired Node.js version
+  displayName: 'Install Node.js'
+
+- task: Npm@1
+  inputs:
+    command: 'install'
+  displayName: 'Install dependencies'
+
+- script: |
+    node app.js
+  displayName: 'Run Node.js script'
