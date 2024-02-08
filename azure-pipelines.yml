@@ -11,4 +11,4 @@ steps:
 - script: |
     node app.js
   displayName: 'Run Node.js script'
-  echo "platform: $platform"
+  Write-Host "My variable value: $(platform)"
