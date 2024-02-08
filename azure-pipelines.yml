@@ -1,6 +1,3 @@
-variables:
-  platform: 'myplatform'
-
 pool:
   vmImage: 'ubuntu-latest'  # Or another image with Node.js installed
 
